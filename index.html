@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasa & Sal · Cocina a la brasa en Valencia</title>
+  <meta name="description" content="Brasa & Sal: restaurante de cocina mediterránea a la brasa en el corazón de Valencia. Reserva tu mesa online.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <img src="logo.svg" alt="" width="34" height="34">
+        <span>Brasa <em>&amp;</em> Sal</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#carta">Carta</a>
+        <a href="#galeria">Galería</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#ubicacion">Horario</a>
+        <a href="#reservas" class="btn btn--small">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. INICIO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Cocina mediterránea a la brasa · Valencia</p>
+        <h1>Fuego lento,<br><em>producto de verdad.</em></h1>
+        <p class="hero__text">Carnes maduradas, pescado de lonja y verduras de la huerta valenciana, cocinados sobre brasa de encina.</p>
+        <div class="hero__actions">
+          <a href="#reservas" class="btn">Reservar mesa</a>
+          <a href="#carta" class="btn btn--ghost">Ver la carta</a>
+        </div>
+      </div>
+      <a href="#nosotros" class="hero__scroll" aria-label="Bajar">↓</a>
+    </section>
+
+    <!-- ===== 2. SOBRE NOSOTROS ===== -->
+    <section class="section about" id="nosotros">
+      <div class="container about__grid">
+        <figure class="about__img reveal">
+          <img src="img/chef.jpg" width="900" height="1385" alt="El chef Martín Roig emplatando en la cocina" loading="lazy">
+          <figcaption>Martín Roig, chef y fundador</figcaption>
+        </figure>
+        <div class="about__text reveal">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Una parrilla, una familia<br>y muchas sobremesas</h2>
+          <p>Brasa &amp; Sal nació en 2014 en una antigua carbonería del barrio de El Carmen. Martín Roig volvió a Valencia después de diez años cocinando en el País Vasco y Argentina con una idea sencilla: tratar el producto con respeto y dejar que el fuego haga el resto.</p>
+          <p>Hoy seguimos encendiendo la parrilla cada mañana a las nueve. Compramos a pescadores de El Grau, a ganaderos de Castellón y a los agricultores de Alboraia que conocemos por su nombre.</p>
+          <ul class="stats">
+            <li><strong>10+</strong><span>años de brasa</span></li>
+            <li><strong>45</strong><span>días de maduración</span></li>
+            <li><strong>4,8★</strong><span>valoración media</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. CARTA ===== -->
+    <section class="section menu" id="carta">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">La carta</p>
+          <h2>De temporada, siempre</h2>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Categorías de la carta">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-entrantes" id="t-entrantes">Entrantes</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-brasa" id="t-brasa" tabindex="-1">A la brasa</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-mar" id="t-mar" tabindex="-1">Del mar</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-postres" id="t-postres" tabindex="-1">Postres</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-bebidas" id="t-bebidas" tabindex="-1">Bebidas</button>
+        </div>
+
+        <div class="tab-panel is-active" role="tabpanel" id="tab-entrantes" aria-labelledby="t-entrantes">
+          <ul class="dishes">
+            <li><div><h3>Croquetas de jamón ibérico</h3><p>Bechamel cremosa, 6 unidades</p></div><span class="price">9,50 €</span></li>
+            <li><div><h3>Tomate de El Perelló</h3><p>Ventresca, cebolla tierna y aceite de arbequina</p></div><span class="price">12,00 €</span></li>
+            <li><div><h3>Huevo a baja temperatura</h3><p>Espinacas, aguacate y pan de masa madre tostado</p></div><span class="price">11,50 €</span></li>
+            <li><div><h3>Alcachofas a la brasa</h3><p>Romesco casero y escamas de sal <span class="tag">V</span></p></div><span class="price">13,00 €</span></li>
+            <li><div><h3>Provoleta</h3><p>Orégano, tomillo y miel de romero <span class="tag">V</span></p></div><span class="price">10,50 €</span></li>
+            <li><div><h3>Ensaladilla de la casa</h3><p>Con gamba roja y huevas de trucha</p></div><span class="price">11,00 €</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="tab-brasa" aria-labelledby="t-brasa" hidden>
+          <ul class="dishes">
+            <li><div><h3>Chuletón de vaca madurada</h3><p>45 días de maduración, aprox. 1 kg · para compartir</p></div><span class="price">68,00 €</span></li>
+            <li><div><h3>Entraña de ternera</h3><p>Patatas fritas en aceite de oliva y chimichurri</p></div><span class="price">22,50 €</span></li>
+            <li><div><h3>Costillas de cerdo ibérico</h3><p>Glaseadas en salsa barbacoa ahumada, 8 horas</p></div><span class="price">19,00 €</span></li>
+            <li><div><h3>Secreto ibérico</h3><p>Pimientos del piquillo confitados</p></div><span class="price">18,50 €</span></li>
+            <li><div><h3>Pollo de corral</h3><p>Medio pollo marinado en limón y ajo negro</p></div><span class="price">16,00 €</span></li>
+            <li><div><h3>Verduras de la huerta</h3><p>Selección del día con salsa de yogur y menta <span class="tag">V</span></p></div><span class="price">14,00 €</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="tab-mar" aria-labelledby="t-mar" hidden>
+          <ul class="dishes">
+            <li><div><h3>Calamar de potera</h3><p>A la brasa con alioli suave y ensalada verde</p></div><span class="price">19,50 €</span></li>
+            <li><div><h3>Pulpo a la parrilla</h3><p>Parmentier de patata y pimentón de la Vera</p></div><span class="price">23,00 €</span></li>
+            <li><div><h3>Lubina salvaje</h3><p>Abierta a la espalda, aceite de ajo y guindilla</p></div><span class="price">26,00 €</span></li>
+            <li><div><h3>Gamba roja de Dénia</h3><p>A la sal gruesa · 150 g</p></div><span class="price">32,00 €</span></li>
+            <li><div><h3>Arroz meloso de bogavante</h3><p>Mínimo 2 personas · precio por persona</p></div><span class="price">28,00 €</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="tab-postres" aria-labelledby="t-postres" hidden>
+          <ul class="dishes">
+            <li><div><h3>Tarta de queso a la brasa</h3><p>Nuestro postre estrella, cremosa por dentro</p></div><span class="price">7,50 €</span></li>
+            <li><div><h3>Torrija caramelizada</h3><p>Helado de leche merengada</p></div><span class="price">7,00 €</span></li>
+            <li><div><h3>Piña asada</h3><p>Ron añejo, lima y coco</p></div><span class="price">6,50 €</span></li>
+            <li><div><h3>Coulant de chocolate</h3><p>70 % cacao y sal Maldon</p></div><span class="price">7,50 €</span></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="tab-bebidas" aria-labelledby="t-bebidas" hidden>
+          <ul class="dishes">
+            <li><div><h3>Vino de la casa</h3><p>Tinto Bobal D.O. Utiel-Requena · copa / botella</p></div><span class="price">4,50 / 22 €</span></li>
+            <li><div><h3>Blanco Verdejo</h3><p>D.O. Rueda · copa / botella</p></div><span class="price">4,00 / 20 €</span></li>
+            <li><div><h3>Cerveza artesana valenciana</h3><p>Rubia o tostada, 33 cl</p></div><span class="price">4,00 €</span></li>
+            <li><div><h3>Agua de Valencia</h3><p>Jarra para compartir</p></div><span class="price">18,00 €</span></li>
+            <li><div><h3>Refrescos y agua</h3><p>Selección de marcas</p></div><span class="price">2,80 €</span></li>
+          </ul>
+        </div>
+
+        <p class="menu__note">IVA incluido · V = vegetariano · Consulta a nuestro equipo por alérgenos.</p>
+      </div>
+    </section>
+
+    <!-- ===== 4. GALERÍA ===== -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Galería</p>
+          <h2>Pasa y mira</h2>
+        </div>
+        <div class="gallery__grid">
+          <button class="gallery__item gallery__item--wide"><img src="img/sala.jpg" width="1000" height="667" alt="Comedor principal del restaurante" loading="lazy"></button>
+          <button class="gallery__item"><img src="img/entrecot.jpg" width="1000" height="667" alt="Entraña a la brasa con patatas fritas" loading="lazy"></button>
+          <button class="gallery__item gallery__item--tall"><img src="img/barra.jpg" width="1000" height="750" alt="Barra del restaurante" loading="lazy"></button>
+          <button class="gallery__item"><img src="img/calamar.jpg" width="1000" height="667" alt="Calamar a la brasa con alioli" loading="lazy"></button>
+          <button class="gallery__item"><img src="img/costillas.jpg" width="1000" height="668" alt="Costillas de cerdo glaseadas" loading="lazy"></button>
+          <button class="gallery__item"><img src="img/huevo.jpg" width="1000" height="1418" alt="Huevo a baja temperatura con espinacas" loading="lazy"></button>
+          <button class="gallery__item gallery__item--wide"><img src="img/platos.jpg" width="1000" height="667" alt="Varios platos para compartir" loading="lazy"></button>
+          <button class="gallery__item gallery__item--wide"><img src="img/cocina.jpg" width="1000" height="1500" alt="Preparación en la cocina" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. RESEÑAS ===== -->
+    <section class="section reviews" id="resenas">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Reseñas</p>
+          <h2>Lo que dicen de nosotros</h2>
+        </div>
+        <div class="reviews__grid">
+          <article class="review reveal">
+            <div class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“El chuletón es de otro nivel y la tarta de queso a la brasa merece el viaje por sí sola. Servicio cercano y sin prisas.”</p>
+            <footer><span class="avatar">LM</span><div><strong>Laura M.</strong></div></footer>
+          </article>
+          <article class="review reveal">
+            <div class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>“Fuimos por un cumpleaños y nos trataron genial. El calamar estaba perfecto y la carta de vinos valencianos es una sorpresa.”</p>
+            <footer><span class="avatar">JP</span><div><strong>Javier P.</strong></div></footer>
+          </article>
+          <article class="review reveal">
+            <div class="stars" role="img" aria-label="4 de 5 estrellas">★★★★<span class="star-off">★</span></div>
+            <p>“Ambiente precioso y producto top. Conviene reservar con antelación el fin de semana porque se llena. Volveremos seguro.”</p>
+            <footer><span class="avatar">SC</span><div><strong>Sofía C.</strong></div></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. RESERVAS ===== -->
+    <section class="section booking" id="reservas">
+      <div class="container booking__grid">
+        <div class="booking__intro reveal">
+          <p class="eyebrow">Reservas</p>
+          <h2>Guárdate una mesa junto al fuego</h2>
+          <p>Reserva online en menos de un minuto. Para grupos de más de 10 personas o eventos privados, llámanos al 960 XX XX XX.</p>
+          <ul class="booking__perks">
+            <li>Confirmación inmediata por email</li>
+            <li>Cancelación gratuita hasta 2 h antes</li>
+            <li>Terraza disponible de abril a octubre</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="bookingForm" novalidate>
+          <div class="form__row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" autocomplete="name" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__cols">
+            <div class="form__row">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required>
+              <small class="form__error"></small>
+            </div>
+            <div class="form__row">
+              <label for="hora">Hora</label>
+              <select id="hora" name="hora" required>
+                <option value="">Elige hora</option>
+                <optgroup label="Comida">
+                  <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option>
+                </optgroup>
+                <optgroup label="Cena">
+                  <option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+                </optgroup>
+              </select>
+              <small class="form__error"></small>
+            </div>
+          </div>
+          <div class="form__row">
+            <label for="personas">Personas</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Menos personas">−</button>
+              <input type="number" id="personas" name="personas" value="2" min="1" max="10" required>
+              <button type="button" data-step="1" aria-label="Más personas">+</button>
+            </div>
+            <small class="form__error"></small>
+          </div>
+          <button type="submit" class="btn btn--full">Confirmar reserva</button>
+          <p class="form__success" id="formSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== 7. HORARIO Y UBICACIÓN ===== -->
+    <section class="section location" id="ubicacion">
+      <div class="container location__grid">
+        <div class="location__info reveal">
+          <p class="eyebrow">Horario y ubicación</p>
+          <h2>Te esperamos</h2>
+          <table class="hours">
+            <tr><th>Lunes</th><td>Cerrado</td></tr>
+            <tr><th>Martes – Jueves</th><td>13:00 – 16:00 · 20:00 – 23:30</td></tr>
+            <tr><th>Viernes – Sábado</th><td>13:00 – 16:30 · 20:00 – 00:30</td></tr>
+            <tr><th>Domingo</th><td>13:00 – 17:00</td></tr>
+          </table>
+          <p class="open-status" id="openStatus"></p>
+          <address>
+            <strong>Brasa &amp; Sal</strong><br>
+            Plaza del Mercado, 12<br>
+            46001 Valencia<br>
+            960 XX XX XX · <a href="mailto:hola@example.com">hola@example.com</a>
+          </address>
+        </div>
+        <div class="location__map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Plaza+del+Mercado,+Valencia&z=16&output=embed"
+            title="Mapa de ubicación de Brasa & Sal"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 8. PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#inicio" class="logo">
+          <img src="logo.svg" alt="" width="34" height="34">
+          <span>Brasa <em>&amp;</em> Sal</span>
+        </a>
+        <p>Cocina mediterránea a la brasa en el centro de Valencia desde 2014.</p>
+      </div>
+      <div>
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#ubicacion">Cómo llegar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <small>© <span id="year">2026</span> Brasa &amp; Sal · Restaurante ficticio creado como proyecto de portafolio</small>
+      <small>Fotos: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></small>
+    </div>
+  </footer>
+
+  <!-- Lightbox de la galería -->
+  <dialog class="lightbox" id="lightbox" aria-label="Imagen ampliada">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">×</button>
+    <img src="" alt="" id="lightboxImg">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
